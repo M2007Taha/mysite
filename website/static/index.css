@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide|);
+:root {
+    --background_color : #1d1d3c;
+    --header_foter : #333364;
+    --main:#33007c;
+    --goode_orang: #ff4500;
+    --white_text: #f2f2f2;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--background_color);
+    margin: 0;
+    padding: 10px;
+    border: var(--background_color) ;
+    border-radius: 10px;    
+}
+
+.topnav {
+    background-color: var(--header_foter);
+    overflow: hidden;
+    border: var(--header_foter);
+    border-radius: 10px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#topnav_about {float: right;}
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--white_text);
+    text-align: center;
+    padding: 16px 18px;
+    border: 10px solid var(--header_foter);
+    border-radius: 50px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: var(--background_color);
+    color: var(--goode_orang);
+}
+
+.welcom {
+    padding: 5px;
+    text-align: center;
+    color: var(--goode_orang);
+    font-size: 35px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.leftcolumn {   
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--white_text);    
+    float: left;
+    width: 80%;
+}
+.rightcolumn {
+    font-family: 'Courier New', Courier, monospace;
+    color: #a92f03;
+    float: left;
+    width: 20%;
+    padding-left: 20px;
+}
+.fakeimg {
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--background_color);
+    width: 100%;
+    padding: 20px;
+    border: var(--background_color);
+    border-radius: 5px;   
+    padding: 5px;
+}
+.card {
+    background-color: var(--main);
+    padding: 20px;
+    margin-top: 20px;
+    border: var(--background_color);
+    border-radius: 5px;   
+    padding: 5px;
+}
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: var(--header_foter);
+    overflow: hidden;
+    border: 10px solid var(--header_foter);
+    border-radius: 10px;
+    text-align:center;
+    width: auto;
+}
+.footer a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: "Audiowide", sans-serif;
+}
+.footer a:hover {
+    color: var(--goode_orang);
+}
+.footer p {font-family: "Audiowide", sans-serif;font-size: 15px;}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+}
+}
