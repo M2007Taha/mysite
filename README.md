@@ -1,3 +1,4 @@
+![faveicone](https://github.com/M2007Taha/mysite/assets/109727381/ad13fbfb-0f86-4b12-a820-752300afd769)
 ## Django Learning Project
 
 This repository is dedicated to learning and exploring the Django web framework. It serves as a playground to experiment with core concepts, build simple applications, and solidify understanding of Django functionalities.
