@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% load static %}
-    <link rel="stylesheet" href="{% static 'index.css' %}">
-    <link rel="icon" type="image/x-icon" href="{% static 'faveicone.ico' %}">
-    <title>{{ settings.APP_NAME }}</title>
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'faveicone.ico' %}" />
+    <title>SMTMB</title>
+  </head>
+  <body>
     <div class="topnav">
-        <a href="./">Home</a>
-        <a href="./page1">Page 1</a>
-        <a href="./page2">Page 2</a>
-        <a href="./about" id="topnav_about">About</a>
-        <!--<a href="./loginpage.php" id="topnav_about">Log In | Sing Up</a>-->
+      <a href="{% url 'home' %}">Home</a>
+      <a href="./page1">Page 1</a>
+      <a href="./page2">Page 2</a>
+      <a href="{% url 'about' %}" id="topnav_about">About</a>
+      {% if True == True %}
+      <a href="{% url 'login' %}" id="topnav_about">Login/Register</a>
+      {% else %}
+      <a href="{% url 'login' %}" id="topnav_about">Profile</a>
+      {% endif %}
     </div>
     <div class="main">
-        {% block content %}
-        {% endblock %}
+      {% block content %}
+
+      {% endblock %}
     </div>
+    <br>
     <div class="footer">
-        <p>©copyright 2023 by <a href="https://github.com/m2007taha" target="_blank">M.Taha Mostafavi</a></p>
+      <p>
+        ©copyright 2023 by <a href="https://github.com/m2007taha" target="_blank">M2007Taha</a>
+      </p>
     </div>
-</body>
+  </body>
 </html>
