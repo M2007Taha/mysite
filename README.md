@@ -46,9 +46,13 @@ The project structure follows the standard Django conventions:
 
 * `mysite`: The main Django project directory.
 * `mysite/settings.py`: Global project configurations.
-* `mysite/urls.py`: Defines URL patterns for the application.
+* `mysite/urls.py`: Defines URL patterns for the mysite.
 * `mysite/wsgi.py`: Entry point for the WSGI server.
-* `website` : Your Django application directory.
+* `website` : My Django application directory.
+* `website/urls.py` : Defines URL patterns for the website.
+* `website/views.py` : It holds Django view functions that process user requests and generate web responses.
+* `website/templates` : It stores HTML templates used by Django views to render dynamic web pages.
+* `website/static` : Contains static files (CSS, JavaScript, images) served directly by the web server.
 
 ### Learning Resources
 
